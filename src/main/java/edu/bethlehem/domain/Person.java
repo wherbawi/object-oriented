@@ -5,11 +5,31 @@ public class Person {
 	private String name;
 	private Address address;
 
+
+
+	@Override
+	public boolean equals(Object obj) {
+	
+		Person other = (Person) obj;
+		if (id != other.id)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+
 	public Person(int id, String name, Address address) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.address = address;
+	}
+
+	public Person() {
+
 	}
 
 	public Person(int i, String string) {
@@ -39,5 +59,9 @@ public class Person {
 
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+
+	public String whoAmI() {
+		return "I am a person with name " + name;
 	}
 }

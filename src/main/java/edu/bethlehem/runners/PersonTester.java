@@ -6,6 +6,13 @@ import edu.bethlehem.domain.Person;
 public class PersonTester {
 
 	public static void main(String[] args) {
+		
+		
+		Person p = new Person(3, "x");
+		Person p2 = new Person(3, "x");
+		System.out.println(p.equals(p2));
+		
+		
 		Address address = new Address("street1", "house1", "bethlehem");
 		// TODO Auto-generated method stub
 		Person p1 = new Person(1, "Ali");

@@ -1,4 +1,4 @@
-package edu.bethlehem.runners;
+package edu.bethlehem.os;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,12 +14,12 @@ import java.util.Scanner;
 public class MyServer {
 
 	public static void main(String[] args) throws UnknownHostException, IOException, InterruptedException {
-		// TODO Auto-generated method stub
 		ServerSocket serverSocket = new ServerSocket(2000);
 		while (true) {
 			System.out.println("waiting");
+		//	Thread.sleep(10000);
 			Socket clientSocket = serverSocket.accept();
-			System.out.println("I am here");
+			System.out.println("received st");
 			Scanner scanner = new Scanner(clientSocket.getInputStream());
 			System.out.println("got message from client : " + scanner.nextLine());
 			PrintStream printWriter = new PrintStream(clientSocket.getOutputStream(), true);
