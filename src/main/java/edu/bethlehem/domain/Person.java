@@ -1,15 +1,18 @@
 package edu.bethlehem.domain;
 
-public class Person {
+public class Person implements Comparable<Person> {
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + "]";
+	}
+
 	private int id;
 	private String name;
 	private Address address;
 
-
-
 	@Override
 	public boolean equals(Object obj) {
-	
+
 		Person other = (Person) obj;
 		if (id != other.id)
 			return false;
@@ -64,4 +67,10 @@ public class Person {
 	public String whoAmI() {
 		return "I am a person with name " + name;
 	}
+
+	@Override
+	public int compareTo(Person o) {
+		return id - o.getId();
+	}
+
 }
