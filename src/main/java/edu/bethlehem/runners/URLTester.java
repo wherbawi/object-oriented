@@ -11,7 +11,10 @@ public class URLTester {
 		// TODO Auto-generated method stub
 		URL url = new URL("https://bethlehem.edu/");
 		Scanner scanner = new Scanner(url.openStream());
-		String x;
+		while (scanner.hasNext()) {
+			System.out.println(scanner.nextLine());
+			
+		}
 	
 	}
 

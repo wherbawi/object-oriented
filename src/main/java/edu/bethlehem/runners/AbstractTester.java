@@ -13,7 +13,7 @@ public class AbstractTester {
 		ArrayList<Animal> animals = new ArrayList<>();
 		animals.add(new Cat("x"));
 		animals.add(new Hund("z"));
-		Edible cat = new Cat("");
+	//	Edible cat = new Cat("");
 		for (Animal animal : animals) {
 			System.out.println(animal.doSound());
 		}

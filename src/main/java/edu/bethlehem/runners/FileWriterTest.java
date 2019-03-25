@@ -14,11 +14,12 @@ public class FileWriterTest {
 		PrintWriter printWriter;
 		try {
 			fileWriter = new FileWriter(myOutFile, true);
-			printWriter=new PrintWriter(fileWriter);
-			printWriter.println("k");
-		//	fileWriter.write("\nfirst write");
+		printWriter=new PrintWriter(fileWriter);
+		printWriter.println("k");
+			//fileWriter.write("\nfirst write");
 
 			// fileWriter.flush();
+		printWriter.close();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 			// TODO Auto-generated catch block
