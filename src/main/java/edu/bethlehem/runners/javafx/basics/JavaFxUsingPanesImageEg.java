@@ -1,4 +1,4 @@
-package edu.bethlehem.runners.javafx;
+package edu.bethlehem.runners.javafx.basics;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package edu.bethlehem.runners.javafx;
+package edu.bethlehem.runners.javafx.basics;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

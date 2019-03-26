@@ -1,4 +1,4 @@
-package edu.bethlehem.runners.javafx;
+package edu.bethlehem.runners.javafx.basics;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
