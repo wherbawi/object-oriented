@@ -32,24 +32,25 @@ public class BorderPaneEg extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		BorderPane bPane = new BorderPane();
+		StackPane topStackPane = new StackPane();
+		StackPane leftStackPane = new StackPane();
 
 		Button button = new Button("click Here!");
 		Button button2 = new Button("click Here!");
 		Label label = new Label("this is a label");
 		TextField field = new TextField();
 
-		StackPane topStackPane = new StackPane();
-		StackPane leftStackPane = new StackPane();
 		topStackPane.getChildren().add(button);
 		leftStackPane.getChildren().add(button2);
 		Button btnLeft = new Button("button 6");
-		bPane.setAlignment(btnLeft, Pos.CENTER);
+		btnLeft.setPrefWidth(200);
 		
 		bPane.setTop(topStackPane);
-		bPane.setLeft(btnLeft);
 		bPane.setBottom(field);
-		bPane.setCenter(label);
+		bPane.setLeft(btnLeft);
+		bPane.setAlignment(btnLeft, Pos.CENTER);
 		bPane.setRight(new Button("button 3"));
+		bPane.setCenter(label);
 		//bPane.setRight(new Button("button 4"));
 		Scene scene = new Scene(bPane, 500, 500);
 		primaryStage.setScene(scene);

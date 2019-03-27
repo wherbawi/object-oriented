@@ -31,16 +31,18 @@ public class GridPaneEg extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		GridPane gPane = new GridPane();
-		//gPane.setGridLinesVisible(true);
 		Button button = new Button("click Here!");
 		Button button2 = new Button("click Here2!");
 		Label label = new Label("this is a label");
 		TextField field = new TextField();
 		
+		gPane.setGridLinesVisible(true);
 		gPane.add(button, 0, 0);
 		gPane.add(label, 1, 0);
 		gPane.add(button2, 2, 0);
-		gPane.add(field, 0, 1);
+		gPane.add(field, 2, 1);
+		gPane.setHgap(20);
+		gPane.setVgap(50);
 
 		Scene scene = new Scene(gPane, 500, 500);
 		primaryStage.setScene(scene);

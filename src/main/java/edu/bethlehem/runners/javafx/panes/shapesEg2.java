@@ -39,17 +39,15 @@ public class shapesEg2 extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		StackPane p = new StackPane();
-		Rectangle r1 = new Rectangle(100,300);
-		Rectangle r2 = new Rectangle(100,300);
-		Rectangle r3 = new Rectangle(100,300);
-		Rectangle r4 = new Rectangle(100,300);
+		Rectangle r1 = new Rectangle(100, 300);
+		Rectangle r2 = new Rectangle(100, 300);
+		Rectangle r3 = new Rectangle(100, 300);
+		Rectangle r4 = new Rectangle(100, 300);
 		r2.setRotate(90);
 		r3.setRotate(45);
 		r4.setRotate(-45);
-		p.getChildren().add(r1);
-		p.getChildren().add(r2);
-		p.getChildren().add(r3);
-		p.getChildren().add(r4);
+		p.getChildren().addAll(r1, r2, r3, r4);
+
 		Scene scene = new Scene(p, 1000, 1000);
 		primaryStage.setScene(scene);
 		primaryStage.show();

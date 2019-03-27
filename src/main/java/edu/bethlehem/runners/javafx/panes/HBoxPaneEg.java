@@ -33,16 +33,16 @@ public class HBoxPaneEg extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		HBox hbPane = new HBox();
-		hbPane.setAlignment(Pos.CENTER_RIGHT);
+		hbPane.setAlignment(Pos.CENTER_LEFT);
 		// gPane.setGridLinesVisible(true);
 		Button button = new Button("click Here!");
 		Button button2 = new Button("click Here!");
 		Label label = new Label("this is a label");
 		TextField field = new TextField();
-		hbPane.getChildren().add(button);
-		hbPane.getChildren().add(label);
+		hbPane.getChildren().addAll(button,button2,label);
 		Scene scene = new Scene(hbPane, 500, 500);
 		primaryStage.setScene(scene);
+		primaryStage.setResizable(false);
 		primaryStage.show();
 
 	}
