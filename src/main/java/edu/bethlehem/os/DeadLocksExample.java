@@ -34,7 +34,7 @@ public class DeadLocksExample {
 		t1.join();
 		t2.join();
 
-		System.out.println("no deadlock");
+		System.out.println("hello no deadlock");
 		System.out.println(a);
 	}
 
