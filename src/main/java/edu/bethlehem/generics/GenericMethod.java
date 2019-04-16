@@ -15,7 +15,7 @@ public class GenericMethod {
 		String[] strs = new String[3];
 		strs[0]="h";
 		print(ints);
-		print(strs);
+		//print(strs);
 
 		List<String> x = new ArrayList<>();
 		x.add("d");
@@ -24,7 +24,7 @@ public class GenericMethod {
 		
 	}
 
-	private static <E> void print(E[] ints) {
+	private static <E extends Number> void print(E[] ints) {
 	
 		for (E e : ints) {
 			System.out.println(e);
