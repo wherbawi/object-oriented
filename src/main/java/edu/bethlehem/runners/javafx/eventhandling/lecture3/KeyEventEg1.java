@@ -39,6 +39,10 @@ public class KeyEventEg1 extends Application {
 					txt.setY(txt.getY() -10);
 				if (event.getCode() == KeyCode.DOWN)
 					txt.setY(txt.getY() +10);
+				if (event.getCode() == KeyCode.RIGHT)
+					txt.setX(txt.getX() +10);
+				if (event.getCode() == KeyCode.LEFT)
+					txt.setX(txt.getX() -10);
 				System.out.println(event.getCode());
 
 			}

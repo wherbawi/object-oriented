@@ -13,15 +13,15 @@ public class MMultiplicationMultithreaded {
 		int bColumns = 1000;
 		int[][] a = new int[aRows][common];
 		int[][] b = new int[common][bColumns];
-		int[][] c = new int[aRows][bColumns];
-		ExecutorService es = Executors.newFixedThreadPool(15);
+		int[][] resultArray = new int[aRows][bColumns];
+		ExecutorService es = Executors.newFixedThreadPool(2006);
 		double timeBefore = System.currentTimeMillis();
 		for (int aRow = 0; aRow < aRows; aRow++)
 			for (int bColumn = 0; bColumn < bColumns; bColumn++) {
-				es.submit(new MultiplicationTask(c, a, b, aRow, bColumn, common));
+				es.submit(new MultiplicationTask(resultArray, a, b, aRow, bColumn, common));
 			}
 		es.shutdown();
-		es.awaitTermination(66, TimeUnit.SECONDS);
+		//es.awaitTermination(0, TimeUnit.SECONDS);
 		System.out.println("exe time  = " + (System.currentTimeMillis() - timeBefore));
 
 	}

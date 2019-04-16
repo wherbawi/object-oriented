@@ -45,7 +45,7 @@ public class TimeLineEg extends Application {
 		
 		Timeline animationTimer = new Timeline();
 		animationTimer.getKeyFrames().add(new KeyFrame(Duration.millis(100), e -> {
-			circle.setCenterX((circle.getCenterX() + 20) % 500);
+			circle.setCenterX((circle.getCenterX() + 10) % primaryStage.getWidth());
 		}));
 		animationTimer.setCycleCount(Timeline.INDEFINITE);
 		animationTimer.play();
