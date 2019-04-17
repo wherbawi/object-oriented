@@ -20,6 +20,7 @@ public class StackTest {
 		intStack.push(20);
 		Integer pop = intStack.pop();
 		StackGeneric<String> strStack = new StackGeneric<>();
+		strStack.push("d");
 		
 	}
 
