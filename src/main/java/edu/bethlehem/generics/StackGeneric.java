@@ -3,19 +3,21 @@ package edu.bethlehem.generics;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
-public class StackGeneric<E> {
-	private ArrayList<E> elements = new ArrayList<>();
+public class StackGeneric<X> {
+	private ArrayList<X> elements = new ArrayList<X>();
 
 	/**
 	 * this method is blah blah
+	 * 
 	 * @param element
 	 */
-	public void push(E element) {
+	public void push(X element) {
 		elements.add(element);
 	}
 
-	public E pop() {
-
+	public X pop() {
+		if (isEmpty())
+			throw new EmptyStackException();
 		return elements.remove(elements.size() - 1);
 	}
 
