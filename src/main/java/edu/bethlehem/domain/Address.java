@@ -12,6 +12,10 @@ public class Address {
 		this.city = city;
 	}
 
+	public Address() {
+
+	}
+
 	public String getStreetName() {
 		return streetName;
 	}
@@ -40,6 +44,5 @@ public class Address {
 	public String toString() {
 		return "Address [streetName=" + streetName + ", houseNo=" + houseNo + ", city=" + city + "]";
 	}
-	
-	
+
 }

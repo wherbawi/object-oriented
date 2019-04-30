@@ -1,0 +1,1 @@
+[{"id":10,"name":"Andy","address":null},{"id":20,"name":"Marwan","address":{"streetName":"street1","houseNo":"2b","city":"Bethlehem"}}]

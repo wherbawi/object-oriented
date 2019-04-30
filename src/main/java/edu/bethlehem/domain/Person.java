@@ -1,9 +1,13 @@
 package edu.bethlehem.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Person implements Comparable<Person> {
+	
+
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + "]";
+		return "Person [id=" + id + ", name=" + name + ", address=" + address + "]";
 	}
 
 	private int id;
@@ -35,9 +39,9 @@ public class Person implements Comparable<Person> {
 
 	}
 
-	public Person(int i, String string) {
+	public Person(int i, String name) {
 		this.id = i;
-		this.name = string;
+		this.name = name;
 	}
 
 	public int getId() {
