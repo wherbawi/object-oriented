@@ -12,6 +12,7 @@ import com.vividsolutions.jts.geom.impl.CoordinateArraySequence;
 public class PolygonArea {
 
 	public static void main(String[] args) {
+		
 		GeodeticCalculator c = new GeodeticCalculator();
 		c.setStartingGeographicPoint(48.764148, 9.168008);
 		c.setDestinationGeographicPoint(48.690815, 9.194553);

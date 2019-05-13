@@ -3,7 +3,6 @@ package edu.bethlehem.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Person implements Comparable<Person> {
-	
 
 	@Override
 	public String toString() {
@@ -12,7 +11,9 @@ public class Person implements Comparable<Person> {
 
 	private int id;
 	private String name;
+
 	private Address address;
+	private Day dayOfBirth;
 
 	@Override
 	public boolean equals(Object obj) {
@@ -75,6 +76,14 @@ public class Person implements Comparable<Person> {
 	@Override
 	public int compareTo(Person o) {
 		return id - o.getId();
+	}
+
+	public Day getDayOfBirth() {
+		return dayOfBirth;
+	}
+
+	public void setDayOfBirth(Day dayOfBirth) {
+		this.dayOfBirth = dayOfBirth;
 	}
 
 }

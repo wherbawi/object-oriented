@@ -17,7 +17,15 @@ public class ObjectToJson {
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonValue = mapper.writeValueAsString(p);
 		System.out.println(jsonValue);
-		
+		System.out.println(sum(1, 2, 3));
+	}
+
+	private static int sum(int... a) {
+		int sum = 0;
+		for (int i : a) {
+			sum += i;
+		}
+		return sum;
 	}
 
 }

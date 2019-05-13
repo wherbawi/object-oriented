@@ -24,7 +24,7 @@ public class BoundaryIntersection extends Application {
 		imageView.setFitHeight(100);
 		imageView.setFitWidth(100);
 
-		Rectangle rectangle = new Rectangle(120, 120, 50, 50);
+		Rectangle rectangle = new Rectangle(150, 150, 50, 50);
 		Pane p = new Pane();
 		p.getChildren().add(imageView);
 		p.getChildren().add(rectangle);

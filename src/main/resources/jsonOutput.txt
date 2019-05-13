@@ -1,1 +1,1 @@
-{"id":10,"name":"Andy","address":null}
+{"id":10,"name":"Andy","address":{"streetName":"street1","houseNo":"2b","city":"Bethlehem"}}

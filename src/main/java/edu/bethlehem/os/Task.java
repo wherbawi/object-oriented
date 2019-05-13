@@ -17,7 +17,7 @@ class Task implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(taskName);
+		System.out.println("done from "+taskName);
 	}
 
 }
